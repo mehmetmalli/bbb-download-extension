@@ -1,0 +1,25 @@
+{
+  "description": "Adds a browser action icon to the toolbar. Click the button to download the recording.",
+  "manifest_version": 2,
+  "name": "BBB Recording Downloader",
+  "version": "1.0",
+  "homepage_url": "https://mehmetmalli.com.tr",
+  "icons": {
+    "256": "icons/icon.png"
+  },
+
+  "permissions": [
+    "activeTab"
+  ],
+
+  "browser_action": {
+    "default_icon": "icons/icon.png",
+    "theme_icons": [{
+        "light": "icons/icon.png",
+        "dark": "icons/icon.png",
+        "size": 256
+    }],
+    "default_title": "BBB Downloader",
+    "default_popup": "popup/template.html"
+  }
+}
