@@ -1,22 +1,25 @@
 {
+  "description": "Adds a browser action icon to the toolbar. Click the button to download the recording.",
   "manifest_version": 2,
-  "name": "Bookmark it!",
-  "version": "1.1",
-  "description": "A simple bookmark button",
-  "homepage_url": "https://github.com/mdn/webextensions-examples/tree/master/bookmark-it",
+  "name": "BBB Recording Downloader",
+  "version": "1.0",
+  "homepage_url": "https://mehmetmalli.com.tr",
   "icons": {
-    "48": "icons/bookmark-it.png",
-    "96": "icons/bookmark-it@2x.png"
+    "256": "icons/icon.png"
   },
 
   "permissions": [
-    "activeTab",
-    "tabs"
+    "activeTab"
   ],
 
   "browser_action": {
-    "default_icon": "icons/star-empty-38.png",
-    "default_title": "Bookmark it!"
+    "default_icon": "icons/icon.png",
+    "theme_icons": [{
+        "light": "icons/icon.png",
+        "dark": "icons/icon.png",
+        "size": 256
+    }],
+    "default_title": "BBB Downloader"
   },
 
   "background": {
